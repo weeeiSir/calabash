@@ -17,8 +17,25 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "keywords": [],
-  "author": "weeeisir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weeeiSir/calabash.git",
+    "branch": "main"
+  },
+  "author": "weeeiSir",
+  "homepage": "https://github.com/weeeiSir/calabash.git",
+  "bugs": {
+    "url": "https://github.com/weeeiSir/calabash.git/issues"
+  },
+  "keywords": [
+    "antd",
+    "ant",
+    "design",
+    "components",
+    "react",
+    "CRUD"
+  ],
+  "license": "MIT",
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
