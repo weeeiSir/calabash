@@ -45,6 +45,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
     "antd": "^4.14.0",
     "js-export-excel": "^1.1.4",
     "moment": "^2.29.3",
