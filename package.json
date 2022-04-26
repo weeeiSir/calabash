@@ -1,6 +1,6 @@
 {
-  "name": "calabash",
-  "version": "1.0.0",
+  "name": "crud-shared",
+  "version": "1.0.1",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/weeeiSir/calabash.git",
+    "url": "https://github.com/weeeiSir/crud-shared.git",
     "branch": "main"
   },
   "author": "weeeiSir",
-  "homepage": "https://github.com/weeeiSir/calabash.git",
+  "homepage": "https://github.com/weeeiSir/crud-shared.git",
   "bugs": {
-    "url": "https://github.com/weeeiSir/calabash.git/issues"
+    "url": "https://github.com/weeeiSir/crud-shared.git/issues"
   },
   "keywords": [
     "antd",

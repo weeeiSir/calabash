@@ -6,7 +6,7 @@ export default {
     mjs: true,
   },
   umd: {
-    name: 'calabash',
+    name: 'crud-shared',
   },
   lessInBabelMode: true,
   preCommit: {

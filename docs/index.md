@@ -1,6 +1,6 @@
 ---
 hero:
-  title: calabash
+  title: crud-shared
   desc: 以 ant-design 为基础衍生的常用CRUD组件
   actions:
     - text: 快速开始 →
@@ -17,5 +17,3 @@ features:
     desc: 常用组件封装<br/> 避免重复造轮子
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
-
-

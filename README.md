@@ -1,33 +1,20 @@
-# calabash
+# crud-shared
 
-## Getting Started
+## 📍 如何使用？
 
-Install dependencies,
-
-```bash
-$ npm i
-```
-
-Start the dev server,
+### 安装
 
 ```bash
-$ npm start
+npm i crud-shared
 ```
 
-Build documentation,
+### 使用
 
-```bash
-$ npm run docs:build
+```js
+import { xxx } from 'crud-shared';
 ```
 
-Run test,
+### 说明
 
-```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
+- 如果想在自己项目中引用，可查看 Demo 写法。
+- 正逐步构想并添加，如果你有好的想法和建议，或者问题，欢迎 [issue](https://github.com/weeeiSir/crud-shared.git/issues)
