@@ -27,4 +27,14 @@ export default defineConfig({
     { title: '介 绍', path: '/guide' },
     { title: '组 件', path: '/components' },
   ],
+  extraBabelPlugins: [
+    [
+      'import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: 'css',
+      },
+    ],
+  ],
 });
