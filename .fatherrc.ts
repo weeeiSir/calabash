@@ -2,8 +2,7 @@ export default {
   cjs: 'babel',
   esm: {
     type: 'babel',
-    importLibToEs: true,
-    mjs: true,
+    importLibToEs: false,
   },
   umd: {
     name: 'crud-shared',
