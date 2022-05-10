@@ -2,9 +2,8 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'crud-shared',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  favicon: 'https://fulu-item11-zjk.oss-cn-zhangjiakou.aliyuncs.com/images/logo.png',
+  logo: 'https://fulu-item11-zjk.oss-cn-zhangjiakou.aliyuncs.com/images/logo.png',
   outputPath: 'docs-dist',
   hash: true,
   base: '/crud-shared/',
