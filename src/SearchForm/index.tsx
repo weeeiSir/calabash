@@ -1,6 +1,17 @@
 import React, { useEffect, useState, Fragment } from 'react';
 
-import { Form, Row, Col, Input, InputNumber, DatePicker, Button, Select } from 'antd';
+import {
+  Form,
+  Row,
+  Col,
+  Input,
+  InputNumber,
+  DatePicker,
+  Button,
+  Select,
+  ConfigProvider,
+} from 'antd';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
 import SelectSearchGroup from './SelectSearchGroup';
 import InputNumberCompact from './InputNumberCompact';
 import { getSpan } from '../_utils/func';
@@ -86,22 +97,24 @@ const SearchForm = ({ form, expand = false, queryItems, optionFromHttp = [] }) =
 
   const showLength = span === 6 ? 4 : 3;
   return (
-    <Form className="search-form" form={form}>
-      {!expand && <Row gutter={gutter}>{RenderForm(queryItems, true)}</Row>}
-      {expand && (
-        <Fragment>
-          <Row gutter={gutter}>
-            {RenderForm(queryItems.slice(0, showLength), true)}
-            {RenderForm(queryItems.slice(showLength, queryItems.length), show)}
-          </Row>
-          <Row justify="end">
-            <Button style={{ marginBottom: '10px' }} type="link" onClick={() => setShow(!show)}>
-              {!show ? '更多筛选' : '收起'}
-            </Button>
-          </Row>
-        </Fragment>
-      )}
-    </Form>
+    <ConfigProvider locale={zhCN}>
+      <Form className="search-form" form={form}>
+        {!expand && <Row gutter={gutter}>{RenderForm(queryItems, true)}</Row>}
+        {expand && (
+          <Fragment>
+            <Row gutter={gutter}>
+              {RenderForm(queryItems.slice(0, showLength), true)}
+              {RenderForm(queryItems.slice(showLength, queryItems.length), show)}
+            </Row>
+            <Row justify="end">
+              <Button style={{ marginBottom: '10px' }} type="link" onClick={() => setShow(!show)}>
+                {!show ? '更多筛选' : '收起'}
+              </Button>
+            </Row>
+          </Fragment>
+        )}
+      </Form>
+    </ConfigProvider>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Select } from 'antd';
-import { optionWithChild } from '../../types/common';
+import { optionWithChild } from '../types/common';
 const { Option, OptGroup } = Select;
 
 export interface SelectSearchGroupProps {

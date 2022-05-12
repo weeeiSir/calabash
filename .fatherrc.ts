@@ -13,4 +13,14 @@ export default {
     prettier: true,
   },
   runtimeHelpers: true,
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
 };
