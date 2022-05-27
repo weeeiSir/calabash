@@ -3,7 +3,7 @@ nav:
   title: 下拉带远程搜索
   toc: menu
 title: SelectSearch 下拉带远程搜索
-order: 1
+order: 2
 ---
 
 ## SelectSearch 代码演示
