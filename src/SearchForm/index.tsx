@@ -49,7 +49,14 @@ function GetFormItem(item, optionFromHttp) {
     case 'Select':
       const list = getOptionList(optionFromHttp, key, optionList);
       return (
-        <Select onChange={onChange} disabled={disabled}>
+        <Select
+          showSearch
+          filterOption={(input, option: any) =>
+            option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+          }
+          onChange={onChange}
+          disabled={disabled}
+        >
           {list.map((v) => (
             <Select.Option key={v.key} value={v.key}>
               {v.title}
