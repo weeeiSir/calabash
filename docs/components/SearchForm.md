@@ -26,6 +26,9 @@ const queryItems = [
     key: 'account',
     type: 'Input',
     initialValue: '',
+    props: {
+      disabled: true,
+    },
   },
   {
     label: '金额',
@@ -146,6 +149,7 @@ Form.Item 表单里的控件配置。
 | type | 表单项控件类型，目前支持 7 种： `DatePicker`， `RangePicker`（时间范围），`Input`，`InputNumber`，`InputNumberCompact`（数字范围），`Select`，`SelectSearchGroup`（下拉选项分组） | string | - |  |
 | initialValue | 表单项初始值 | string \| number \| array | - |  |
 | optionList | 下拉选项的 option 值，适用于 type 为 `Select`或`SelectSearchGroup`的控件 | [optionListType](#optionlist)\[] | - |  |
+| props | 表单项控件额外的自定义属性 | object | - |  |
 
 ### optionList
 

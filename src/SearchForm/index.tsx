@@ -34,18 +34,19 @@ function GetFormItem(item, optionFromHttp) {
     disabled = false,
     onChangeInput = (e) => e.target.value, // 提供联动，自定义逻辑出口
     onChange = (value) => value, // 提供联动，自定义逻辑出口
+    props = {},
   } = item;
   switch (type) {
     case 'DatePicker':
-      return <DatePicker format={format} style={{ width: '100%' }} />;
+      return <DatePicker format={format} style={{ width: '100%' }} {...props} />;
     case 'RangePicker':
-      return <DatePicker.RangePicker format={format} style={{ width: '100%' }} />;
+      return <DatePicker.RangePicker format={format} style={{ width: '100%' }} {...props} />;
     case 'Input':
-      return <Input onChange={onChangeInput} />;
+      return <Input onChange={onChangeInput} {...props} />;
     case 'InputNumber':
-      return <InputNumber style={{ width: '100%' }} />;
+      return <InputNumber style={{ width: '100%' }} {...props} />;
     case 'InputNumberCompact':
-      return <InputNumberCompact />;
+      return <InputNumberCompact {...props} />;
     case 'Select':
       const list = getOptionList(optionFromHttp, key, optionList);
       return (
@@ -56,6 +57,7 @@ function GetFormItem(item, optionFromHttp) {
           }
           onChange={onChange}
           disabled={disabled}
+          {...props}
         >
           {list.map((v) => (
             <Select.Option key={v.key} value={v.key}>
@@ -66,7 +68,7 @@ function GetFormItem(item, optionFromHttp) {
       );
     case 'SelectSearchGroup':
       const _list = getOptionList(optionFromHttp, key, optionList);
-      return <SelectSearchGroup optionList={_list} />;
+      return <SelectSearchGroup optionList={_list} {...props} />;
 
     default:
       return null;
